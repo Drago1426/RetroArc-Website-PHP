@@ -1,0 +1,189 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background: url('/images/wp11898445.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    height: 100%;
+
+}
+
+.main-container {
+    width: 100%; /* By default, it takes the full width */
+    max-width: 1500px; /* Adjust this value to set the maximum width you desire */
+    background-color: #fff;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Example media query for screens wider than 600px */
+@media (min-width: 1250px) {
+    .main-container {
+        width: 80%; /* Adjust the width as needed */
+        /* Other styles if necessary */
+        margin: auto;
+    }
+}
+
+/* Additional media query for smaller screens */
+@media (max-width: 1999px) {
+    .main-container {
+        width: 100%; /* Full width for smaller screens */
+        /* Other styles if necessary */
+    }
+}
+
+
+
+/* For Webkit (Chrome, Safari, etc.) */
+::-webkit-scrollbar {
+    width: 10px; /* Adjust the width of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; /* The track of the scrollbar */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888; /* The scroll handle */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Handle on hover */
+}
+
+
+
+/*Navbar*/
+
+nav.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
+}
+
+.gradient-container {
+    background: linear-gradient(to top, #5f7cff, #fe957b);
+    height: 200px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+hr {
+    width: 100%;
+    border-top: 1px solid #ccc;
+}
+
+.navbar .container .navbar-nav {
+    justify-content: flex-end;
+}
+
+.relative-container {
+    position: relative;
+}
+
+hr {
+    border-top-color: white;
+}
+
+.nav-link {
+    color: black;
+    background-color: rgb(207, 154, 10);
+    margin: 2px;
+    border-radius: 5px;
+}
+
+.nav-link:hover{
+    color: whitesmoke;
+}
+
+.dropdown-item {
+    color: black;
+}
+
+.dropdown-item:hover {
+    color: gray;
+}
+
+
+svg {
+    fill: whitesmoke;
+}
+
+svg:hover {
+    fill: gray;
+}
+
+
+
+/*Carousel*/
+.bannerImages{
+    opacity: 95%;
+}
+
+
+
+h2{
+    text-align: center;
+    padding-top: 5%;
+}
+
+.content-wrap {
+    min-height: calc(100vh - 60px); /* Adjust 60px to the height of your footer */
+    /* If you have a header, you should subtract its height as well */
+    position: relative; /* Needed for footer positioning */
+    padding-bottom: 60px; /* Space for the footer */
+}
+
+/*Cards*/
+.card-img-custom {
+    width: 100%; /* Makes the image fill the card width */
+    height: 200px; /* Adjust the height as needed */
+    object-fit: contain; /* Ensures the image covers the area without stretching */
+}
+
+.card {
+    position: relative; /* Needed for absolute positioning of the button */
+    height: 100%; /* This will make sure all cards are the same height */
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-text {
+    
+    flex-grow: 1; /* Ensures that the text section expands */
+}
+
+.card-price {
+    font-weight: bold; /* Example style, adjust as needed */
+    padding-bottom: 20%;
+}
+
+.card .btn {
+    margin-top: auto; /* Pushes the button to the bottom of the flex container */
+    position: absolute; /* Absolute positioning */
+    bottom: 20px; /* Adjust as needed for spacing from the bottom */
+    left: 20px; /* Adjust as needed for spacing from the left */
+    right: 20px; /* Adjust as needed for spacing from the right */
+}
+
+footer {
+    background-color: rgb(240, 196, 76);
+    width: 100%;
+    position: relative; /* Relative to the content-wrap */
+    bottom: 0;
+    clear: both; /* This will ensure it doesn't overlap with floated elements */
+}
